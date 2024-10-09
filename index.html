@@ -64,6 +64,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         .hero .cta-buttons .btn {
@@ -121,6 +122,74 @@
 
         .chat-widget:hover {
             background-color: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            header .logo {
+                font-size: 1.2em;
+            }
+
+            header nav {
+                gap: 5px;
+            }
+
+            .hero {
+                padding: 60px 10px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .hero .cta-buttons .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            .clients {
+                gap: 20px;
+                padding: 20px 10px;
+            }
+
+            .chat-widget {
+                bottom: 10px;
+                right: 10px;
+                padding: 5px 10px;
+            }
+
+            .chat-widget img {
+                width: 25px;
+                height: 25px;
+            }
         }
     </style>
 </head>

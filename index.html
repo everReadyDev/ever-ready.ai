@@ -25,6 +25,7 @@
         header .logo {
             font-size: 1.5em;
             font-weight: bold;
+            color: #00BFFF;
         }
 
         header nav {
@@ -39,17 +40,19 @@
         }
 
         header nav a:hover {
-            color: #888;
+            color: #00BFFF;
         }
 
         .hero {
             text-align: center;
             padding: 100px 20px;
+            background-color: #000;
         }
 
         .hero h1 {
             font-size: 3em;
             margin-bottom: 20px;
+            color: #00BFFF;
         }
 
         .hero p {
@@ -76,8 +79,12 @@
         }
 
         .hero .cta-buttons .btn.demo {
-            background-color: #6b4eff;
+            background-color: #00BFFF;
             color: #fff;
+        }
+
+        .hero .cta-buttons .btn.demo:hover {
+            background-color: #008FCC;
         }
 
         .hero .cta-buttons .btn.quote {
@@ -86,12 +93,18 @@
             border: 2px solid #fff;
         }
 
+        .hero .cta-buttons .btn.quote:hover {
+            color: #00BFFF;
+            border: 2px solid #00BFFF;
+        }
+
         .clients {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 40px;
             padding: 40px 20px;
+            background-color: #111;
         }
 
         .clients img {
@@ -106,8 +119,8 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            background-color: #fff;
-            color: #000;
+            background-color: #00BFFF;
+            color: #fff;
             padding: 10px 20px;
             border-radius: 25px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -121,7 +134,7 @@
         }
 
         .chat-widget:hover {
-            background-color: #f0f0f0;
+            background-color: #008FCC;
         }
 
         @media (max-width: 768px) {
